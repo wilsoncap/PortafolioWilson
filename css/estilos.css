@@ -196,6 +196,7 @@ flex-wrap: wrap;
     .event-list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     .event-list-tittle{
@@ -203,9 +204,9 @@ flex-wrap: wrap;
     }
     
     .event{
-    margin: 10px;
-    width: 400px;
-    height: 510px;
+    margin: 1%;
+    width: 40%;
+    height: auto;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -407,12 +408,25 @@ flex-wrap: wrap;
   .project-description{
     font-size: .8em;
   }
+
+  .event{
+      width:auto;
+      flex-shrink: initial;
+  }
+  .event img{
+      width: 100%;
+  }
 }
 
 @media screen and (max-width:480px){
     .project-details{
         width: auto;
         font-size: 12px;
+    }
+
+    .event-detail{
+        margin: -2em .5em .5em;
+        padding: 1em;
     }
 }
 
