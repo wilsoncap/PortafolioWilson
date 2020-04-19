@@ -249,8 +249,8 @@ flex-wrap: wrap;
     }
 
 .contact{
-    margin: 10px 10px 20px 10px;
-    /* padding: 30px 30px; */
+    margin: 10px 0 20px 0;
+    padding: 0 20px;
     height: 200px;
     background: #056fff ;
     display: flex;
@@ -427,6 +427,28 @@ flex-wrap: wrap;
     .event-detail{
         margin: -2em .5em .5em;
         padding: 1em;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        display: block;
+        text-align: center;
+        margin: auto 0;
+    }
+
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h3{
+        margin-top: 0;
+       }
+    
+    .footer{
+        display: block;
+        text-align: center;
+        /* para solucionar el problema de los margenes del los parrafor */
+        border: 1px solid transparent;
     }
 }
 
