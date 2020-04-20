@@ -169,12 +169,23 @@
     </footer>
 <script>
     const menu = document.querySelector('.menu');
-    console.log(menu);
     const burgerBotton = document.querySelector('#burger-menu');
-    console.log(burgerBotton);
+    const ipad = window.matchMedia('screen and (max-width:767px)');
+    // console.log(menu);
+    // console.log(burgerBotton);
     menu.classList.add('is-active');
 
-    burgerBotton.addEventListener('click', hideShow);
+
+    ipad.addListener(validation)
+
+    function validation(event){
+        if(event.matches){
+        burgerBotton.addEventListener('click', hideShow)
+        } else{
+            burgerBotton.removeEventListener('click', hideShow)
+        }
+        // console.log(event);
+    }
 
     function hideShow(){
         if(menu.classList.contains('is-active')){
