@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <i class="icon-menu burger-botton"></i>
+    <i class="icon-menu burger-botton" id="burger-menu"></i>
      <header class="header">
         <div class="container">
         <figure class="logo">
@@ -167,12 +167,22 @@
             <p>Desinag with <\3 by <a href="https://twitter.com/thespinartist"></a>@thespinartist </p> 
         </div>
     </footer>
+<script>
+    const menu = document.querySelector('.menu');
+    console.log(menu);
+    const burgerBotton = document.querySelector('#burger-menu');
+    console.log(burgerBotton);
+    menu.classList.add('is-active');
 
+    burgerBotton.addEventListener('click', hideShow);
 
-
-
-
-
-
+    function hideShow(){
+        if(menu.classList.contains('is-active')){
+            menu.classList.remove('is-active'); 
+        }else{
+        menu.classList.add('is-active');
+        }
+    }
+</script>
 </body>
 </html>
