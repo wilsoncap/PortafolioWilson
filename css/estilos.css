@@ -397,7 +397,7 @@ flex-wrap: wrap;
     color: white;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
     .hero{
         height: auto;
         position: relative;
@@ -445,6 +445,15 @@ flex-wrap: wrap;
 }
 
 @media screen and (max-width:767px){
+    .porfolio{
+        padding:0 1.4em;
+    }
+    h2{
+        font-size: 1.2em;
+        margin: .5em 0;
+        text-align: center;
+    }
+    
     .burger-botton{
         display: block;
     }
